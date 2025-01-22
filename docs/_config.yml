@@ -29,6 +29,9 @@ domain: rroessler1.github.io
 url: http://rroessler1.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+show_downloads: false
+github:
+  is_project_page: false
 
 # Build settings
 # theme: architect

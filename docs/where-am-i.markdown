@@ -9,7 +9,6 @@ layout: default
 
 <div class="button-container">
   <a class="btn" href="/assets/whereami-report.pdf" download>Download the Final Report</a>
-  <a class="btn" href="/path-to-file2.pdf" download>Download PDF 2</a>
   <a class="btn" href="https://github.com/rroessler1/Hierarchical-Localization/tree/arni_changes" target="_blank">Check out the Code</a>
 </div>
 
