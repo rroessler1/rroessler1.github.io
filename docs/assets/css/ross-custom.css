@@ -59,3 +59,10 @@
     }
   }
 }
+
+.responsive-figure figcaption {
+  margin-top: 8px; /* Adds space between the image and caption */
+  font-size: 14px; /* Adjust the font size for the caption */
+  font-style: italic;
+  color: #666; /* Subtle gray color for the caption text */
+}
