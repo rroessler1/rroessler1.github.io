@@ -35,7 +35,7 @@ My job was to "get HLoc working", which was harder than it sounds. HLoc itself w
 Once it finally "worked", the predictions were terrible. After debugging some incorrect coordinate transformations, we realized that more data was not always better. We were sending keypoints from the top 40 image matches to COLMAP to predict the user's location, but it seems the final prediction was often including some outliers (despite using RANSAC), as one (or several) coordinates were always off by a lot, despite the 3 best image matches looking very visually similar and accurate. The Z-axis was most often off, so maybe we had some depth data quality issues. We never figured out what the exact problem was, but sending fewer images to COLMAP gave us better predictions. There are more details in the final report.
 
 <figure class="responsive-figure">
-  <img src="/assets/user-nav-screenshot.png" alt="User following the path overlaid on the world">
+  <img src="/assets/user-nav-screenshot2.png" alt="User following the path overlaid on the world">
   <figcaption>Real world on the left. What the user sees is on the right, and the white line is the navigation path they're following.</figcaption>
 </figure>
 
