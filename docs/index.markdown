@@ -8,6 +8,6 @@ layout: default
 
 # Cool Projects I've Worked On
 
-## [WhereAmI? A Mixed Reality application for Indoor Localization](where-am-i.html)
+## [WhereAmI? A Mixed Reality Application for Indoor Localization](where-am-i.html)
 
-## [Improving Conditioned Human Motion Synthesis with Diffusion Models](human-motion-synthesis.html)
+## [Human Motion Synthesis with Diffusion Models in Real Environments](human-motion-synthesis.html)

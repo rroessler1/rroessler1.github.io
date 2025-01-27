@@ -3,7 +3,11 @@ h1 {
 }
 .video-container {
   max-width: 100%;
-  overflow: hidden;
+  display: flex;
+  gap: 20px; /* Space between videos */
+  justify-content: center; /* Center the videos */
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .video-container video {
@@ -12,11 +16,35 @@ h1 {
   display: block;
 }
 
+.video-small {
+  max-width: 380px;
+}
+
+figure {
+    display: inline-block; /* Makes figures align side by side (if space allows) */
+    text-align: center;    /* Centers the caption text */
+    margin: 0 0px;        /* Adds some space between figures */
+}
+
+/* Style for the caption */
+figcaption {
+    margin-top: 8px;       /* Adds space between the video and caption */
+    font-size: 14px;       /* Adjust caption font size */
+    color: #555;           /* Light gray for captions */
+}
+
 .button-container {
   display: flex;
   justify-content: center; /* Centers the buttons horizontally */
   gap: 20px; /* Space between buttons */
   margin: 20px 0; /* Adds spacing above and below the buttons */
+  flex: 1 1 300px;
+}
+
+.content-wrapper {
+    max-width: 100%; /* Adjust to fit your page layout */
+    margin: 0 auto;   /* Centers the content horizontally */
+    padding: 0 20px;  /* Adds some padding to prevent content from touching the edges */
 }
 
 .btn {
