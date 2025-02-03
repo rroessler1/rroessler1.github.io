@@ -6,8 +6,12 @@ title: Ross Roessler
 layout: default
 ---
 
-# Cool Projects I've Worked On
+# Project Portfolio
 
-## [WhereAmI? A Mixed Reality Application for Indoor Localization](where-am-i.html)
+## School Projects
 
-## [Human Motion Synthesis with Diffusion Models in Real Environments](human-motion-synthesis.html)
+### [WhereAmI? A Mixed Reality Application for Indoor Localization](where-am-i.html)
+
+### [Human Motion Synthesis with Diffusion Models in Real Environments](human-motion-synthesis.html)
+
+## Personal Projects
