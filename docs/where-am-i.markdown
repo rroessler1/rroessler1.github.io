@@ -12,8 +12,6 @@ layout: default
   <a class="btn" href="https://github.com/rroessler1/Hierarchical-Localization/tree/arni_changes" target="_blank">See the Code on Github</a>
 </div>
 
-This was a group project for the Mixed Reality class at ETH. We built an Augmented Reality for a Magic Leap 2 device that allowed the user to locate their position indoors and navigate in a previously mapped environment.
-
 <div class="video-container">
   <video controls>
     <source src="/assets/whereami-video.mp4" type="video/mp4">
@@ -21,12 +19,30 @@ This was a group project for the Mixed Reality class at ETH. We built an Augment
   </video>
 </div>
 
-We used the [Hierarchical-Localization](https://github.com/cvg/Hierarchical-Localization) algorithm on reference data inside one of our campus buildings at ETH from the [LaMAR dataset](https://github.com/microsoft/lamar-benchmark).
+### Abstract
 
-My specific contributions were:
+This was a group project for the Mixed Reality class at ETH. We built an Augmented Reality for a Magic Leap 2 device that allowed the user to locate their position indoors and navigate in a previously mapped environment. We used the [Hierarchical-Localization](https://github.com/cvg/Hierarchical-Localization) algorithm on reference data inside one of our campus buildings at ETH from the [LaMAR dataset](https://github.com/microsoft/lamar-benchmark).
+
+### My Contributions
+
 * Cleaning and preprocessing the data we needed from the LaMAR dataset.
 * Updating the Hierarchical-Localization algorithm to run and make predictions on that data.
 * Experimenting with different algorithms and parameters to get the best localization results.
+
+### Analysis
+
+#### Challenges
+
+* Terabytes of data requiring different transformations
+* Relatively sparse ground truth global trajectory data
+* Poor predictions from COLMAP
+
+#### Learnings
+
+* Sending fewer images to COLMAP actually worked better
+* Integrating different ground truth data sources helped significantly
+* Visualization tools for debugging were extremely helpful
+
 
 The high level idea was that a user would be indoors wearing the Magic Leap 2 device. The device would capture what they were looking at, send it to a server, and use HLoc to localize the position. The position, transformed to the building coordinate space, would be sent back to the device, where the user could then see where they were on a minimap and navigate through the building.
 
