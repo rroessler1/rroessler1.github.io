@@ -16,8 +16,6 @@ layout: default
   <a class="btn" href="mailto:{{ user }}@{{ domain }}?subject={{ subject | uri_escape }}" target="_blank">Request Code Access</a>
 </div>
 
-This was a group project for the Digital Humans class at ETH. We extended a method called Diffusion Noise Optimization (DNO) and generate realistic human motions in real-world scenes with multiple, complex-shaped obstacles.
-
 <div class="content-wrapper">
 <div class="video-container">
     <figure>
@@ -37,14 +35,19 @@ This was a group project for the Digital Humans class at ETH. We extended a meth
 </div>
 </div>
 
-Our project was to build on top of the [Diffusion Noise Optimization](https://korrawe.github.io/dno-project/) paper and integrate the diffusion generation with realistic environments.
+### Abstract
 
-My specific contributions were:
+This was a group project for the Digital Humans class at ETH. We extended a method called Diffusion Noise Optimization (DNO) and generate realistic human motions in real-world scenes with multiple, complex-shaped obstacles. Our project was to build on top of the [Diffusion Noise Optimization](https://korrawe.github.io/dno-project/) paper and integrate the diffusion generation with realistic environments.
+
+### My Contributions
+
 * All the work to get the model initially running and training against a Signed Distance Function representing an environment
 * Integrating with the real world scans
 * Creating an automated pipeline, enabling bulk running of different environments and configurations
 * Implementing evaluation metrics
 * The ablation study
+
+### Analysis
 
 I was the primary contributer on this project. The main challenge was that the code we were given was an early version and didn't work out of the box. It was a lot of software engineering work to actually get it running and integrated with representations (SDFs, etc.) of real world scenes. The DNO model was built on top of [Human MDM](https://guytevet.github.io/mdm-page/), and we had some interesting issues such as, the generated motion would only ever move "forward". We had to change the scene orientation relative to the diffusion model's axes so that the human would move towards the area we wanted it to. It also performed unexpectedly poorly in our experiments for motion other than "walking forward", though we eventually got crawling, jumping, and a few other motions to work.
 
