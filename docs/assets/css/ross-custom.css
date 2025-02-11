@@ -32,6 +32,10 @@ figure {
     margin: 0 0px;        /* Adds some space between figures */
 }
 
+.figure-small {
+  max-width: 380px;
+}
+
 /* Style for the caption */
 figcaption {
     margin-top: 8px;       /* Adds space between the video and caption */

@@ -37,7 +37,7 @@ This was a group project for the Mixed Reality class at ETH. We built an Augment
 
 #### Challenges
 
-* Terabytes of data requiring different transformations
+* Terabytes of data requiring different transformations - we weren't even sure at first which data we could use
 * Relatively sparse ground truth global trajectory data
 * Poor predictions from COLMAP
 
@@ -47,16 +47,13 @@ This was a group project for the Mixed Reality class at ETH. We built an Augment
 * Integrating different ground truth data sources helped significantly
 * Visualization tools for debugging were extremely helpful
 
-
-The high level idea was that a user would be indoors wearing the Magic Leap 2 device. The device would capture what they were looking at, send it to a server, and use HLoc to localize the position. The position, transformed to the building coordinate space, would be sent back to the device, where the user could then see where they were on a minimap and navigate through the building.
-
-My job was to "get HLoc working", which was harder than it sounds. HLoc itself worked great out of the box on their example data, and the code was written well. But first, we had terabytes of data from LaMAR, and we didn't understand the different formats or what exactly we could use. We decided to use the HoloLens data, but there were some different transformations necessary to align the RBG images with the depth images. We also later realized that we didn't have much ground truth trajectory data, so we had to filter down our dataset. Then we didn't have enough data, so we also added in some iOS data, which was more sparse, but higher resolution, and helped with predictions.
-
-Once it finally "worked", the predictions were terrible. After debugging some incorrect coordinate transformations, we realized that more data was not always better. We were sending keypoints from the top 40 image matches to COLMAP to predict the user's location, but it seems the final prediction was often including some outliers (despite using RANSAC), as one (or several) coordinates were always off by a lot, despite the 3 best image matches looking very visually similar and accurate. The Z-axis was most often off, so maybe we had some depth data quality issues. We never figured out what the exact problem was, but sending fewer images to COLMAP gave us better predictions. There are more details in the final report.
-
+<figure class="responsive-figure">
+  <img src="/assets/hg-map.png" alt="Outline of ground truth locations within the building">
+  <figcaption>My teammate Árni built the visualization on the bottom right, which showed the ground truth locations and the prediction location. It was super helpful in debugging.</figcaption>
+</figure>
+<br>
+<br>
 <figure class="responsive-figure">
   <img src="/assets/user-nav-screenshot2.png" alt="User following the path overlaid on the world">
   <figcaption>Real world on the left. What the user sees is on the right, and the white line is the navigation path they're following.</figcaption>
 </figure>
-
-In the end, it worked well for the demo day, and was pretty cool! The localization was working well (we don't have exact accuracy numbers, but it generally looked completely correct on the minimap) and then users could navigate within the building.
