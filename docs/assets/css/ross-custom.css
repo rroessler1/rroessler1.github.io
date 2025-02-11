@@ -51,6 +51,26 @@ figcaption {
   flex: 1 1 300px;
 }
 
+/* Apply stacking behavior on small screens */
+@media screen and (max-width: 42em) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0px; /* Space between buttons */
+
+    align-items: center; /* Center the buttons in the column */
+  }
+
+  .btn {
+    width: auto; /* Keep buttons at natural width instead of stretching */
+    text-align: center; /* Ensure text stays centered */
+  }
+
+  .btn + .btn {
+    margin-left: 0px; /* Remove horizontal spacing */
+    margin-top: 10px; /* Add vertical spacing between buttons */
+  }
+}
+
 .content-wrapper {
     max-width: 100%; /* Adjust to fit your page layout */
     margin: 0 auto;   /* Centers the content horizontally */
@@ -73,10 +93,6 @@ figcaption {
     text-decoration: none;
     background-color: rgba(00, 109, 73, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  + .btn {
-    margin-left: 1rem;
   }
 
   @include large {
