@@ -1,6 +1,12 @@
 h1 {
   text-align: center;
 }
+
+.center-text {
+  justify-content: center; /* Center the videos */
+  text-align: center;
+}
+
 .video-container {
   max-width: 100%;
   display: flex;

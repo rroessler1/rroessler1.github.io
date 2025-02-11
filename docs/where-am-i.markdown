@@ -7,6 +7,10 @@ layout: default
 
 # WhereAmI? A Mixed Reality application for Indoor Localization
 
+<div class="center-text">
+  Team: Árni Bjarnsteinsson, Fabian Blatter, Matěj Mrázek, Ross Roessler
+</div>
+
 <div class="button-container">
   <a class="btn" href="/assets/whereami-report.pdf" download>Download the Final Report</a>
   <a class="btn" href="https://github.com/rroessler1/Hierarchical-Localization/tree/arni_changes" target="_blank">See the Code on Github</a>
