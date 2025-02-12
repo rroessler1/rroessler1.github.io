@@ -64,11 +64,11 @@ This was a group project for the Digital Humans class at ETH. We extended a meth
 <div class="content-wrapper">
 <div class="video-container">
   <figure class="responsive-figure figure-small">
-    <img src="/assets/walking_complex_scene.png" alt="Outline of ground truth locations within the building">
+    <img src="/assets/walking_complex_scene.png" alt="Image of all the frames of the person walking through the room">
     <figcaption>"Walking forward" in a more complicated environment</figcaption>
   </figure>
   <figure class="responsive-figure figure-small">
-    <img src="/assets/jumping_complex_scene.png" alt="Outline of ground truth locations within the building">
+    <img src="/assets/jumping_complex_scene.png" alt="Image of all the frames of the person jumping through the room">
     <figcaption>"Jumping forward" in a more complicated environment</figcaption>
   </figure>
   </div>

@@ -12,7 +12,6 @@ h1 {
   display: flex;
   gap: 20px; /* Space between videos */
   justify-content: center; /* Center the videos */
-  align-items: center;
   flex-wrap: wrap;
 }
 
