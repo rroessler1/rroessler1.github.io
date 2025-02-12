@@ -18,7 +18,7 @@ I wrote this plugin to help myself study Chinese, and then improved and released
 
 It currently (Jan 2025) has over 1000 downloads and is ranked top 15% of all Anki plugins.
 
-### Details
+### Results
 
 * Over 1000 downloads, only positive feedback
 * Supports multiple Speech-to-Text cloud providers and all languages
