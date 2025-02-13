@@ -20,25 +20,27 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header center-text" role="banner">
-      <div class="header-top">
-        <h1 class="project-name">
-          <a href="/" style="text-decoration: none; color: inherit;">{{ site.title }}</a>
-        </h1>
-        <div class="header-icons">
-          <a href="/assets/ross_roessler_cv.pdf" target="_blank"><img src="/assets/resume-icon-transparent.png" alt="Download my CV" class="icon"></a>
-          <a href="mailto:{{ user }}@{{ domain }}" target="_blank"><img src="/assets/envelope-line-icon-transparent.png" alt="Email Me" class="icon"></a>
-          <a href="https://www.linkedin.com/in/ross-roessler-92a23757/" target="_blank"><img src="/assets/InBug-White.png" alt="LinkedIn" class="icon"></a>
-          <a href="https://github.com/rroessler1" target="_blank"><img src="/assets/github-mark-white.png" alt="GitHub" class="icon"></a>
+      <div class="header-wrapper">
+        <div class="header-top">
+          <h1 class="project-name">
+            <a href="/" style="text-decoration: none; color: inherit;">{{ site.title }}</a>
+          </h1>
+          <div class="header-icons">
+            <a href="/assets/ross_roessler_cv.pdf" target="_blank"><img src="/assets/resume-icon-transparent.png" alt="Download my CV" class="icon"></a>
+            <a href="mailto:{{ user }}@{{ domain }}" target="_blank"><img src="/assets/envelope-line-icon-transparent.png" alt="Email Me" class="icon"></a>
+            <a href="https://www.linkedin.com/in/ross-roessler-92a23757/" target="_blank"><img src="/assets/InBug-White.png" alt="LinkedIn" class="icon"></a>
+            <a href="https://github.com/rroessler1" target="_blank"><img src="/assets/github-mark-white.png" alt="GitHub" class="icon"></a>
+          </div>
         </div>
-      </div>
 
-      <div class="justify-items-center">
-        <div class="header-container">
-          <figure class="responsive-figure">
-            <img src="/assets/ross-thumbnail-rounded.png" alt="Ross Roessler" class="header-image">
-          </figure>
-          <div class="header-text">
-            <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <div class="justify-items-center">
+          <div class="header-container">
+            <figure class="responsive-figure">
+              <img src="/assets/ross-thumbnail-rounded.png" alt="Ross Roessler" class="header-image">
+            </figure>
+            <div class="header-text">
+              <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+            </div>
           </div>
         </div>
       </div>

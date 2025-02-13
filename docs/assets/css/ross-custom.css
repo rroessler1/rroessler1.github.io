@@ -11,6 +11,11 @@ h1 {
   justify-items: center;
 }
 
+.header-wrapper {
+  max-width: 1000px;     /* Restrict header content width */
+  margin: 0 auto;
+}
+
 .header-container {
   display: flex;                /* Enables Flexbox layout */
   align-items: center;          /* Vertically center image and text */
@@ -75,7 +80,7 @@ h1 {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 42em) {
+@media screen and (max-width: 44em) {
   .header-top {
     flex-direction: column;         /* Stack title and icons vertically */
     align-items: center;            /* Center items */
