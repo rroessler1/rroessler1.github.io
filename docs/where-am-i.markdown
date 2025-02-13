@@ -8,7 +8,9 @@ layout: default
 # WhereAmI? A Mixed Reality application for Indoor Localization
 
 <div class="center-text">
-  Team: Árni Bjarnsteinsson, Fabian Blatter, Matěj Mrázek, Ross Roessler
+  <figcaption>
+    Team: Árni Bjarnsteinsson, Fabian Blatter, Matěj Mrázek, Ross Roessler
+  </figcaption>
 </div>
 
 <div class="button-container">

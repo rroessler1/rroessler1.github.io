@@ -8,7 +8,9 @@ layout: default
 # Human Motion Synthesis with Diffusion Models in Real Environments
 
 <div class="center-text">
+  <figcaption>
   Team: Öykü Irmak Hatipoğlu, Ross Roessler, Bingjie Xue, Kai Zhang
+  </figcaption>
 </div>
 
 {% assign user = "rossroessler" %}

@@ -24,7 +24,10 @@ This is the largest project I've ever done and the one I'm most proud of technic
 * Developed algorithm to estimate a user’s vocabulary
   * This was done using word frequency lists and asking users which words they knew by sampling at log-intervals. Their vocabulary size could confidently be estimated after about 80 words
 
-
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KJzD1Hllj9U?si=ZnGonz6OE2zAnSky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>The site no longer exists, but here is a demo of when it was up and running.</figcaption>
+</div>
 ### Analysis
 
 This was my first time attempting to build an actual product, and I learned some very valuable lessons:

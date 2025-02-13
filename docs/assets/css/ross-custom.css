@@ -125,13 +125,6 @@ figure img {
   max-width: 380px;
 }
 
-/* Style for the caption */
-figcaption {
-    margin-top: 8px;       /* Adds space between the video and caption */
-    font-size: 14px;       /* Adjust caption font size */
-    color: #555;           /* Light gray for captions */
-}
-
 .button-container {
   display: flex;
   justify-content: center; /* Centers the buttons horizontally */
@@ -204,6 +197,14 @@ figcaption {
       margin-left: 0;
     }
   }
+}
+
+/* Style for the caption */
+figcaption {
+  margin-top: 8px;       /* Adds space between the video and caption */
+  font-size: 14px;       /* Adjust caption font size */
+  color: #555;           /* Light gray for captions */
+  font-style: italic;
 }
 
 .responsive-figure figcaption {
