@@ -7,6 +7,86 @@ h1 {
   text-align: center;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
+.header-container {
+  display: flex;                /* Enables Flexbox layout */
+  align-items: center;          /* Vertically center image and text */
+  gap: 20px;                    /* Adds space between image and text */
+  max-width: 900px;
+}
+
+.header-image {
+  max-width: 150px;             /* Ensures the image doesn't exceed 150px */
+  height: auto;                 /* Maintains aspect ratio */
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;       /* Stacks h1 and h2 vertically */
+  justify-content: center;
+}
+
+@media screen and (max-width: 30em) {  /* Adjust breakpoint as needed */
+  .header-container {
+    flex-direction: column;       /* Stacks items vertically */
+    align-items: center;          /* Center-aligns the image and text */
+    text-align: center;           /* Centers the text */
+    gap: 0px;
+  }
+
+  .header-image {
+    margin-top: 10px;          /* Adds some space between the image and text */
+  }
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;          /* Center the title horizontally */
+  align-items: flex-start;          /* Align items to the top */
+  position: relative;
+  padding: 10px 20px;
+}
+
+.project-name {
+  margin: 0;
+  flex: 0 1 auto;                   /* Let the h1 content define its size */
+  position: relative;
+}
+
+.header-icons {
+  display: flex;
+  align-items: flex-start;          /* Align icons to the top */
+  gap: 10px;
+  position: absolute;               /* Position icons absolutely */
+  right: 20px;                      /* Push icons to the right */
+  top: 10px;                        /* Align to the top of the header */
+}
+
+.header-icons .icon {
+  width: 24px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.header-icons .icon:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 42em) {
+  .header-top {
+    flex-direction: column;         /* Stack title and icons vertically */
+    align-items: center;            /* Center items */
+  }
+
+  .header-icons {
+    position: static;               /* Remove absolute positioning */
+    margin-top: 10px;               /* Add spacing below the title */
+  }
+}
+
 .video-container {
   max-width: 100%;
   display: flex;
@@ -29,6 +109,11 @@ figure {
     display: inline-block; /* Makes figures align side by side (if space allows) */
     text-align: center;    /* Centers the caption text */
     margin: 0 0px;        /* Adds some space between figures */
+}
+
+figure img {
+  max-width: 100%;  /* Ensures image scales down with the container */
+  height: auto;     /* Maintains the image’s aspect ratio */
 }
 
 .figure-small {
