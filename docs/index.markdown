@@ -25,3 +25,16 @@ layout: default
 <!---
 ### [BBQ-GPT: Supermarket Discount Analysis (Collaboration with the WWF)](bbq-gpt.html)
 -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.innerHeight <= 700) {  // Mobile screen height check
+      document.querySelectorAll('a[href]').forEach(function(link) {
+        const href = link.getAttribute('href');
+        if (href && !href.includes('#') && (href.endsWith('.html'))) {
+          link.setAttribute('href', href + '#content');
+        }
+      });
+    }
+  });
+</script>
