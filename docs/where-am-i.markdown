@@ -49,13 +49,12 @@ This was a group project for the Mixed Reality class at ETH. We built an Augment
 * Integrating different ground truth data sources helped significantly
 * Visualization tools for debugging were extremely helpful
 
-<figure class="responsive-figure">
+<figure class="responsive-figure not-too-big">
   <img src="/assets/hg-map.png" alt="Outline of ground truth locations within the building">
   <figcaption>My teammate Árni built the visualization on the bottom right, which showed the ground truth locations and the prediction location. It was super helpful in debugging.</figcaption>
 </figure>
 <br>
-<br>
-<figure class="responsive-figure">
+<figure class="responsive-figure not-too-big">
   <img src="/assets/user-nav-screenshot2.png" alt="User following the path overlaid on the world">
   <figcaption>Real world on the left. What the user sees is on the right, and the white line is the navigation path they're following.</figcaption>
 </figure>

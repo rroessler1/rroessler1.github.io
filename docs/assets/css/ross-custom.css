@@ -101,7 +101,7 @@ h1 {
 }
 
 .video-container video {
-  width: 100%;
+  width: 560px;
   height: auto;
   display: block;
 }
@@ -212,4 +212,11 @@ figcaption {
   font-size: 14px; /* Adjust the font size for the caption */
   font-style: italic;
   color: #666; /* Subtle gray color for the caption text */
+}
+
+.responsive-figure.not-too-big {
+  display: block;
+  margin: 0 auto;          /* Center the figure horizontally */
+  max-width: 560px;
+  text-align: center;
 }
