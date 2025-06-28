@@ -12,6 +12,8 @@ layout: default
 
 ### [WhereAmI? A Mixed Reality Application for Indoor Localization](where-am-i.html)
 
+### [Linear Language Models and their Memory Limitations](modern-rnns.html)
+
 ### [Human Motion Synthesis with Diffusion Models in Real Environments](human-motion-synthesis.html)
 
 ### [CNN for Image Superresolution](superresolution.html)
