@@ -18,10 +18,10 @@ layout: default
 
 There are some similar paid plugins, but I felt strongly about creating a free option.
 
-In just three months it has reached over 400 downloads and is ranked in the top 20% of all Anki plugins.
+In just eight months it has reached over 1500 downloads, is ranked in the top 7% of all Anki plugins, and has 6 stars on Github! This is quite impressive considering it's a small community.
 
 ### Results
 
-* Over 400 downloads, only positive feedback
+* Over 1500 downloads, only positive feedback
 * Supports multiple LLM providers and designed to easily integrate more
 * Implemented a generic interface so it is easy to send specific Fields from/to the flashcard
